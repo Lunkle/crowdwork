@@ -1,13 +1,7 @@
 # crowdwork
 Decentralized, low-profile, and secure platform for executing background tasks, with a reward-based system that incentivizes workers to efficiently process tasks, making it a reliable and scalable solution for distributed computing needs.
 
-## Running the Rust Hello World Program
+## .gitignore
+A `.gitignore` file is used to specify which files and directories should be ignored by Git. This helps in keeping the repository clean by not including unnecessary files and directories, such as build artifacts, temporary files, and other files that are not relevant to the project.
 
-To run the Rust "Hello, world!" program, follow these steps:
-
-1. Ensure you have Rust installed. If not, you can install it from [rust-lang.org](https://www.rust-lang.org/).
-2. Navigate to the project directory.
-3. Run the following command:
-   ```
-   cargo run
-   ```
+The `.gitignore` file for this project includes Rust-specific ignore rules as well as general ignore rules for common files and directories.
