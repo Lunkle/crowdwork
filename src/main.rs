@@ -1,5 +1,6 @@
 use tokio;
 use tokio::io::{self, AsyncBufReadExt, AsyncWriteExt};
+mod relay;
 
 #[tokio::main]
 async fn main() {
@@ -7,6 +8,11 @@ async fn main() {
     let mut stdout = io::stdout();
     let mut reader = io::BufReader::new(stdin);
     let mut buffer = String::new();
+
+    // Start the relay server
+    if let Err(e) = relay::start_relay_server() {
+        eprintln!("Failed to start relay server: {}", e);
+    }
 
     loop {
         buffer.clear();
